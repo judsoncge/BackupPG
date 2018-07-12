@@ -1,0 +1,3 @@
+<p><h3>Valor do caixa do mês atual: <?php echo "R$ " . arruma_numero(retorna_caixa_mes_ano($mes, $ano, $conexao_com_banco));?></h3></p>
+<p><h3>Autorizado para empenho/pagamento: <?php echo "R$ " . arruma_numero(retorna_caixa_autorizado_empenho($mes, $ano, $conexao_com_banco));?></h3></p>
+<p><h3>Disponível: <?php echo "R$ " . arruma_numero(retorna_caixa_disponivel($mes, $ano, $conexao_com_banco));?></h3></p>

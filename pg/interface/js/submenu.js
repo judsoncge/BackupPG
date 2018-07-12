@@ -1,0 +1,27 @@
+$(document).ready(function(){
+	$(".financeiro-subitem").hide(500);
+	$(".servidor-subitem").hide(500);
+	$(".processos-subitem").hide(500);
+	$(".sucor-subitem").hide(500);
+	$(".indice-produtividade-subitem").hide(500);
+	$(".chamado-subitem").hide(500);
+
+	$("#financeiro").click(function(){
+		$(".financeiro-subitem").slideToggle();
+	});
+	$("#chamado").click(function(){
+		$(".chamado-subitem").slideToggle();
+	});
+	$("#servidor").click(function(){
+		$(".servidor-subitem").slideToggle();
+	});
+	$("#processos").click(function(){
+		$(".processos-subitem").slideToggle();
+	});
+	$("#sucor").click(function(){
+		$(".sucor-subitem").slideToggle();
+	});
+	$("#indice-produtividade").click(function(){
+		$(".indice-produtividade-subitem").slideToggle();
+	});
+});

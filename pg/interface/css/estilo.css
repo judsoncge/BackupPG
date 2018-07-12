@@ -1,0 +1,1084 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+
+/*resetar todas as propriedades css*/
+* {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+
+/* aqui definimos que o html e o body terão altura de 100% */
+html{
+	height:100%;
+	font-family: 'Montserrat', sans-serif;
+	padding: 0;
+}
+
+select{
+	height: 35px;
+}
+
+a:link, a:visited, a:hover, a:active {
+	text-decoration: none
+}
+
+ #preloader {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin-left: -20px;
+    z-index: 110;
+}
+
+/*#bg-loader{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.05);
+	z-index: 99;
+}*/
+
+.loader {
+    border: 2px solid white; /* Light grey */
+    border-top: 2px solid rgba(41, 128, 185,1.0); /* Blue */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.row{
+	margin-right: 0px;
+}
+
+.row-fluid{
+	margin-right: 0px;
+}
+
+
+/*logo da página index.php*/
+.logo{
+	margin-top: 30px;
+	padding-bottom: 50px;
+
+}
+
+#alterar-senha{
+    padding-top: 5px;
+    color: rgba(0,0,0,0.6);
+}
+
+
+/*status pago*/
+#pago{
+	color: rgba(39, 174, 96,1.0);
+}
+
+
+
+
+
+
+/*campos de login e senha da página index.php*/
+.login{
+	margin-left: 200px;
+	margin-right: 200px;
+	padding: 20px;
+	background-color: rgba(255,255,255,0.2);
+	border-radius: 3px;
+}
+
+#campo-login, #campo-senha{
+	font-size: 11pt;
+	font-family: 'Roboto', sans-serif;
+}
+
+#botao-entrar{
+	font-size: 11pt;
+	font-family: 'Montserrat', sans-serif;
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+	transition: 0.2s;
+
+}
+
+#botao-entrar:hover{
+	transform: translate(0px,-1px);
+	box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
+	transition: 0.2s;
+}
+
+#botao-entrar:active{
+	background-color: rgb(245,245,245);
+}
+
+
+.linha-grafico{
+	margin: 10px 0 10px 0;
+	color:rgba(0,0,0,0.6);
+}
+
+
+.grafico{
+	min-height: 300px;
+	width: 100%;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(0,0,0,0.1);
+	box-shadow: 1px 2px 1px rgba(0,0,0,0.3);
+	cursor: pointer;
+
+}
+
+.grafico2{
+	margin: 20px;
+	padding: 20px;
+	width: 95%;
+	float:left;
+	border-style: solid;
+	border-width: 1px;
+	background-color: white;
+	border-color: rgba(0,0,0,0.1);
+	box-shadow: 1px 2px 1px rgba(0,0,0,0.3);
+
+}
+
+
+
+
+.grafico-avalia-tecnico{
+	height: 300px;
+	width: 100%;
+    margin-left: 20px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(0,0,0,0.1);
+	box-shadow: 1px 2px 1px rgba(0,0,0,0.3);
+
+}
+
+.item-avalia-tecnico{
+	border: solid 1px rgba(0,0,0,0.1);
+    padding: 10px;
+    margin-left: 1.1%;
+    margin-top: 4%;
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.1); 
+	background-color: white;
+
+}
+
+#processos-por-mes, #processos-por-mes-individual{
+	height: 400px;
+	width: 100%;
+	padding: 20px;
+	/*margin-left: 15px;*/
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(0,0,0,0.1);
+	background-color: white;
+	box-shadow: 1px 2px 1px rgba(0,0,0,0.3);
+}
+
+
+.texto-documento{
+	font-size: 20pt;
+}
+
+
+/*logos utilizados na página index.php*/
+#logo-governo{
+	height: 60px;
+}
+
+#logo-gestao-cge{
+	padding-bottom: 20px;
+	padding-top: 80px;
+}
+
+#logo-gestao-cge-mobile{
+	display: none;
+	padding-top: 30px;
+}
+
+/*footer da página index.php*/
+footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	font-size: 10pt;
+	padding: 5px;
+	color: rgba(255,255,255,0.7);
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	background-color: rgba(0,0,0,0.1);
+}
+
+
+/*propriedades da página home*/
+.menu-superior{
+	width: 100%;
+	height: 60px;
+	background-color: rgba(41, 128, 185,1.0);
+	box-shadow: 2px 1px 3px rgba(0,0,0,0.4);
+	z-index: 100;
+	position: fixed;
+}
+
+
+/*menu sanduiche*/
+#menu-toggle{
+	padding: 20px;
+	border-radius: 0px;
+	color: rgba(255,255,255,0.9);
+	transition: 0.3s;
+}
+
+#menu-toggle:hover{
+	background-color: rgba(255,255,255,0.2);
+	transition: 0.3s;
+}
+
+#menu-toggle:active{
+	background-color: rgba(255,255,255,0.4);
+	transition: 0.3s;
+}
+
+/*estilo do submenu lateral*/
+.financeiro-subitem, .servidor-subitem, .processos-subitem , .sucor-subitem, .indice-produtividade-subitem, .chamado-subitem{
+	margin-left: 20px;
+	display: none;
+	color: rgba(0,0,0,0.7);
+}
+
+#logo-home{
+	padding-left: 20px;
+	margin-top: -5px;
+}
+
+
+/*ícone do botão sair*/
+#sair-icone{
+	position: absolute;
+	right: 0px;
+	color: white;
+	padding: 23px;
+	transition: 0.2s;
+}
+
+#sair-icone:hover{
+	background-color: rgba(255,255,255,0.2);
+	transition: 0.2s;
+}
+
+#sair-icone:active{
+	background-color: rgba(255,255,255,0.4);
+	transition: 0.2s;
+}
+
+
+/*ícone do botão notificações*/
+#notificacao-icone{
+	position: absolute;
+	right: 65px;
+	color: white;
+	padding: 23px;
+	transition: 0.2s;
+}
+
+#notificacao-icone:hover{
+	background-color: rgba(255,255,255,0.2);
+	transition: 0.2s;
+}
+
+#notificacao-icone:active{
+	background-color: rgba(255,255,255,0.4);
+	transition: 0.2s;
+}
+
+
+/*imagem do perfil do usuário*/
+#box-imagem {
+	position: relative;
+	margin-left: 20px;
+	margin-top: 90px;
+	overflow:hidden;
+	width:100px;
+	height:100px;
+	clear:both;
+	border-radius: 100%;
+}
+
+#novembro_azul{
+	padding-left: 10px;
+	position: relative;
+	height: 40px;
+	margin-left: 205px;
+	margin-top: -70px;
+}
+
+
+#imagem {
+	position:relative;
+	max-height: 120px;
+    top:50%;
+    left:50%;
+    margin-top:-50px;
+    margin-left:-50px;
+}
+
+
+#alterar-senha{
+	position: relative;
+	font-size: 9pt;
+	font-family: 'Roboto', sans-serif;
+	/*top: 45px;*/
+	margin-top: -20px;
+
+}
+
+#alterar-senha:hover{
+	color: rgba(41, 128, 185,1.0);
+}
+
+
+.rteskin_office2007, .rteskin_blue, .rteskin_office2007_blue{
+	width: 1600px;
+}
+
+.foto-mensagem{
+	height: 35px;
+	border-radius: 100px; 
+    /*border-style: solid;
+	border-width: 1px;
+	border-color: rgba(0,0,0,0.3);*/
+    box-shadow: 2px 1px 3px rgba(0,0,0,0.3);
+}
+
+#alterar-foto{
+	position: absolute;
+	font-size: 9pt;
+	font-family: 'Roboto', sans-serif;
+	top: 63px;
+	color: rgba(0,0,0,0.6);
+}
+
+
+#alterar-foto:hover{
+	color: rgba(41, 128, 185,1.0);
+}
+
+/*definindo a imagem dos servidores */
+
+.box-servidor{
+	position: relative;
+	margin: 25px;
+	overflow:hidden;
+	width:110px;
+	height:110px;
+	clear:both;
+	border-radius: 100%;
+
+}
+
+.box-servidor2{
+	position: relative;
+	margin-top:35px;
+	overflow:hidden;
+	width:200px;
+	height:200px;
+	clear:both;
+	border-radius: 100%;
+
+}
+
+.box-equipe{
+	position: relative;
+	margin: 25px;
+	margin-left: 40px;
+	overflow:hidden;
+	width:110px;
+	height:110px;
+	clear:both;
+	border-radius: 100%;
+
+}
+
+.box-avalia-tecnico{
+	position: relative;
+	margin: 25px;
+	overflow:hidden;
+	width:210px;
+	height:210px;
+	clear:both;
+	border-radius: 100%;
+
+}
+
+
+.avalia-tecnico-img{
+	position:relative;
+	height: 240px;
+	top:20%;
+	left: 10%;
+	margin-top:-50px;
+	margin-left:-50px;
+	
+}
+
+.servidor-img{
+	position:relative;
+	height: 140px;
+	top:40%;
+	left: 20%;
+	margin-top:-50px;
+	margin-left:-50px;
+	
+}
+
+.servidor-img2{
+	position:relative;
+	height: 250px;
+	top:20%;
+	left: 12%;
+	margin-top:-50px;
+	margin-left:-50px;
+	
+}
+
+
+.equipe-img{
+	position:relative;
+	height: 140px;
+	top:40%;
+	left: 40%;
+	margin-top:-50px;
+	margin-left:-90px;
+	
+}
+
+.modal-box-servidor{
+	position: relative;
+	margin-bottom: 15px;
+	overflow:hidden;
+	width:200px;
+	height:200px;
+	clear:both;
+	border-radius: 100%;
+
+}
+
+.modal-servidor-img{
+	position:relative;
+	height: 240px;
+	top:20%;
+	left: 15%;
+	margin-top:-50px;
+	margin-left:-50px;
+	
+}
+
+/*
+.modal-header{
+	background-color: rgba(189, 195, 199,0.1);
+	background-image: url("img/bg-foto");
+}*/
+
+
+.nome_servidor{
+	font-family: 'Roboto', sans-serif;
+	font-size: 20pt;
+	margin-top: -10px;
+
+}
+
+.nome-avalia-tecnico{
+	font-family: 'Roboto', sans-serif;
+	font-size: 20pt;
+    padding-top: 42px;
+
+}
+
+.nota-avalia-tecnico{
+    font-size: 40pt;
+}
+
+.box-avalia-tecnico-nota{
+    position: relative;
+    background-color: rgba(236, 240, 241,0.4);
+    color: rgba(52, 152, 219,1.0);
+    border-style: solid;
+    border-color: rgba(52, 152, 219,1.0);
+    border-width: 1px;
+    width:210px;
+	height:210px;
+	border-radius: 100%;
+    margin-top: 10%;
+}
+
+.equipe_servidor{
+    font-family: 'Roboto', sans-serif;
+    font-size: 11pt;
+    margin-bottom: 70px;
+    
+}
+
+#abre-modal{
+	margin-top: -5px;
+	background-color: rgba(255,255,255,0.0);
+}
+
+#abre-modal:hover{
+	color: rgba(41, 128, 185,1.0);
+}
+
+
+#mensagem{
+	position: relative;
+	margin-left: 135px;
+	margin-top: -85px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 11pt;
+	line-height: 150%;
+	color: rgba(0,0,0,0.7);
+	vertical-align: middle;
+
+}
+
+
+/*itens do menu*/
+#menu-itens{
+	padding-top: 220px;
+}
+
+.menu-item{
+	position: relative;
+	padding: 10px 0 10px 20px;
+	color: rgba(0,0,0,0.8);
+	font-size: 11pt;
+	transition: 0.3s;
+}
+
+.menu-item:hover{
+	background-color: rgba(0,0,0,0.1);
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.menu-item:active{
+	background-color: rgba(0,0,0,0.5);
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.menu-item:visited{
+	background-color: rgba(0,0,0,0.5);
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.icone-menu{
+	padding-right: 15px;
+}
+
+.menu-rodape{
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	font-size: 8pt;
+	padding-left: 11px;
+	padding-bottom: 10px;	
+	color: rgba(0,0,0,0.7);
+}
+
+
+.titulo-pagina{
+	font-family: 'Roboto', sans-serif;
+	font-size: 30pt;
+	margin-top: -15px;
+}
+
+.menu-home{
+    position: relative;
+}
+
+.caixa-conteudo{
+	/*background-color: rgba(0,0,0,0.1);*/
+	position: relative;
+	margin-top: 10px;
+	padding: 10px 0 0 0;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(0,0,0,0.1);
+	min-height: 530px;
+	background-color: rgba(236, 240, 241, 0.2);
+}
+
+.caixa-conteudo div.row{
+	padding-bottom: 10px;
+	font-size: 11pt;
+}
+
+
+/*deixando todos os inputs sem bordas arredondadas*/
+.form-control{
+	border-radius: 0px;
+	font-size: 11pt;
+}
+
+
+/*estilizando botão de anexar foto*/
+.btn-file{
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(41, 128, 185);
+    height: 35px;
+    color: white;
+    width: 100%;
+    border-radius: 0px;
+}
+
+.btn-file:hover{
+	background-color: rgb(47, 141, 204);
+}
+
+.btn-file:active{
+	background-color: rgb(36, 112, 163);
+}
+
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+input[readonly] {
+  background-color: white !important;
+  cursor: text !important;
+}
+
+/*estilizando botão enviar*/
+#submit{
+	margin-top: 10px;
+	padding: 10px;
+	background-color: rgb(41, 128, 185);
+    color: white;
+    width: 100%;
+    border-radius: 0px;
+
+}
+
+
+.linha-modal-processo{
+	border: solid 1px rgba(0,0,0,0.1);
+	/*border-radius: 2px;*/
+	padding: 10px;
+	margin: 10px 0 10px 4px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+	background-color: white;
+
+}
+
+.botao-dashboard{
+	background-color: rgba(236, 240, 241,0.5);
+	color: rgba(0,0,0,0.5);
+	border: 1px solid #e3e3e3;
+    border-radius: 0;
+}
+
+.botao-dashboard:hover{
+	background-color: rgba(236, 240, 241,1.0);
+}
+
+.botao-dashboard:active{
+	background-color: rgba(236, 240, 241,0);
+}
+
+.botao-comunicacao{
+    background-color: rgba(236, 240, 241,0);
+    color: rgb(41, 128, 185);
+    border: 1px solid rgba(41, 128, 185, 0.3);
+    border-radius: 0px;
+    font-size: 11pt;
+    margin-right: 2px;
+}
+
+.botao-comunicacao:hover{
+    background-color: rgb(41, 128, 185);
+    color: white;
+    transition: 0.2s;
+}
+
+.botao-comunicacao:active{
+    background-color: white;
+    color: rgb(41, 128, 185);
+    transition: 0.5s;
+}
+
+.botao-comunicacao-ativo{
+    background-color: rgb(41, 128, 185);
+    color: white;
+    border-radius: 0px;
+    font-size: 11pt;
+    margin-right: 2px;
+}
+
+.card{
+    position: relative;
+    background-size:100% auto;
+    height: 250px;
+    width: 100%;
+    border-radius: 0px;
+    margin-left: 8px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.07);
+    transition: 0.3s;
+}
+
+
+.card-moldura{
+    position: relative;
+    background-color: rgba(0,0,0,0.4);
+    height: 250px;
+    width: 100%;
+    z-index: 2;
+    transition: 0.5s;
+    overflow: visible;
+}
+
+.card-moldura:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+
+.card:hover{
+    background-size:103% auto;
+    transition: 0.3s;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+.card-texto{
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0,0,0,0.0);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 13pt;
+    color: white;
+    text-align: left;
+    bottom: 0;
+    padding: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.modal-card-foto{
+    width: 100%;
+}
+
+.carousel-inner{
+    border-style: solid;
+	border-width: 1px;
+	border-color: rgba(0,0,0,0.1);
+	box-shadow: 1px 2px 1px rgba(0,0,0,0.3);
+}
+
+.modal-card-foto2{
+    position: relative;
+    height: 500px;
+    width: 100%;
+    overflow: visible;
+}
+
+
+
+.comunicacao-cabecalho{
+    background-color: rgba(236, 240, 241, 0.5);
+    color: rgba(41, 128, 185,1.0);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: -35px;
+    margin-left: -25px;
+    margin-right: -25px;
+}
+
+.carousel-control.right, .carousel-control.left{
+    background-image:url();
+}
+
+.icon-next, .icon-prev{
+    background-color: #4E443C;
+    border-radius: 100%;
+}
+
+
+#botao-enviar-mensagem{
+	margin-top: 28px;
+	background-color: rgba(41, 128, 185, 0.0);
+    color: rgba(41, 128, 185, 1.0);
+    width: 100%;
+    border-radius: 0px;
+    height: 35px;
+    transition: 0.2s;
+}
+
+#botao-enviar-mensagem:hover{
+	background-color: rgba(41, 128, 185, 1.0);
+	color: white;
+	transition: 0.2s;
+}
+
+#botao-tramitar{
+	margin-top: 29px;
+	background-color: rgb(41, 128, 185);
+    color: white;
+    width: 100%;
+    border-radius: 0px;
+    padding: 6px;
+}
+
+#botao-arquivar, #botao-dar-saida, #botao-prazo{
+	margin-left: 10px;
+	border-radius: 0px;
+}
+
+#botao-prazo{
+	margin-top: 31px;
+}
+
+#situacao-concluido, #situacao-em-andamento, #situacao-em-atraso, #situacao-concluido-em-atraso{
+	font-size: 16pt;
+	padding-left: 10px;	
+	padding-top: 5px;
+}
+
+
+#situacao-concluido{
+	color: rgb(39, 174, 96);
+}
+
+#situacao-em-andamento{
+	color: rgb(230, 126, 34);
+}
+
+#situacao-em-atraso{
+	color: rgb(192, 57, 43);
+}
+
+
+#situacao-concluido-em-atraso{
+	color: rgb(142, 68, 173);
+}
+
+/*definindo altura do campo data*/
+.tipo-data{
+	height: 35px;
+}
+
+
+
+.atendido{
+	background-color: #dff0d8;;
+}
+
+.em-aberto{
+	background-color: #f2dede;
+}
+
+
+.well {
+    min-height: 20px;
+    padding: 19px;
+    margin: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+}
+
+.pull-right {
+    float: right;
+}
+
+#btn-print-servidor, #btn-editar{
+	border-radius: 0px;
+}
+
+
+.modal-content{
+	border-radius: 0px;
+	padding: 10px;
+}
+
+.modal-title{
+	font-family: 'Roboto', sans-serif;
+	font-size: 24pt;
+	padding-top: 10px;
+}
+
+
+#ano, #ano-item{
+	display: none;
+}
+
+/*controlando elementos para smartphones*/
+@media only screen and (max-width: 480px) {
+	.login{
+		top:50%;
+		left: 50%;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-top: -30px;
+		background-color: rgba(255,255,255,0.0);
+	}
+	#logo-gestao-cge{
+		max-height: 500px;
+		max-width: 500px;	
+	}
+	#campo-login, #campo-senha{
+		padding: 5px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	#logo-gestao-cge{
+		display: none;
+	}
+	#logo-gestao-cge-mobile{
+		display: block;
+		padding-top: 50px;
+	}
+
+	#logo-governo{
+		height: 40px;
+	}
+
+	#botao-entrar{
+		margin-top: 5px;
+	}
+
+	footer{
+		display: none;
+	}
+	.titulo-pagina{
+		font-size: 20pt;
+	}
+
+	#logo{
+		margin-left: -20px;
+	}
+	#logo-home{
+		height: 19px;
+		margin-left: -13px;
+	}
+	#sair-icone{
+		position: absolute;
+		right: 0px;
+		color: white;
+		padding: 23px 10px 23px 10px;
+		transition: 0.2s;
+	}
+	#notificacao-icone{
+		position: absolute;
+		right: 40px;
+		color: white;
+		padding: 23px 10px 23px 10px;
+		transition: 0.2s;
+	}
+    .grafico, .grafico-avalia-tecnico{
+        height: auto;
+        width: 380px;
+    }
+    .botao-comunicacao, .botao-comunicacao-ativo{
+        width: 100%;
+        margin-bottom: 3px;
+    }
+}
+
+/*controlando elementos para tablets*/
+@media only screen and (min-width: 481px) and (max-width: 968px) {
+	.login{
+		top:50%;
+		left: 50%;
+		margin-left: 50px;
+		margin-right: 50px;
+		margin-top: -30px;
+		background-color: rgba(255,255,255,0.0);
+	}
+	#logo-gestao-cge{
+		max-height: 500px;
+		max-width: 500px;	
+	}
+	#campo-login, #campo-senha{
+		padding: 5px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	
+	#logo-gestao-cge-mobile{
+		display: none;
+		padding-top: 50px;
+	}
+
+	#logo-governo{
+		height: 40px;
+	}
+
+	#botao-entrar{
+		margin-top: 5px;
+	}
+
+	footer{
+		display: none;
+	}
+	.titulo-pagina{
+		font-size: 24pt;
+	}
+	#logo-home{
+		height: 17px;
+	}
+	#sair-icone{
+		position: absolute;
+		right: 0px;
+		color: white;
+		padding: 23px 10px 23px 10px;
+		transition: 0.2s;
+	}
+	#notificacao-icone{
+		position: absolute;
+		right: 40px;
+		color: white;
+		padding: 23px 10px 23px 10px;
+		transition: 0.2s;
+	}
+    .grafico, .grafico-avalia-tecnico{
+        height: auto;
+        width: 668px;
+    }
+    .botao-comunicacao, .botao-comunicacao-ativo{
+        width: 100%;
+        margin-bottom: 3px;
+    }
+
+}
